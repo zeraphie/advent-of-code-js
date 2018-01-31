@@ -8,7 +8,7 @@ let len = num.length;
 // Reduce the results
 let result = num.reduce((total, item, index, arr) => {
 	// If it's the last item in the input, match against the first
-    if(index === len - 1 && item === arr[0]){
+	if(index === len - 1 && item === arr[0]){
         // Bitwise operator to transform to number
 		total += ~~item;
 	}
