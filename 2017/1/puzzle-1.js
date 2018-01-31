@@ -23,4 +23,4 @@ let result = num.reduce((total, item, index, arr) => {
     return total;
 }, 0);
 
-console.log(result);
+console.log(result); // 1177
