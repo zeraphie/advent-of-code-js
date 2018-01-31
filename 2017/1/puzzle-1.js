@@ -7,19 +7,19 @@ let len = num.length;
 
 // Reduce the results
 let result = num.reduce((total, item, index, arr) => {
-	// If it's the last item in the input, match against the first
-	if(index === len - 1 && item === arr[0]){
-        // Bitwise operator to transform to number
-		total += ~~item;
-	}
+    // If it's the last item in the input, match against the first
+    if(index === len - 1 && item === arr[0]){
+    // Bitwise operator to transform to number
+        total += ~~item;
+    }
 
-	// If the next number is the same, add the item to the total
-	if(index < len - 1 && item === arr[index + 1]){
+    // If the next number is the same, add the item to the total
+    if(index < len - 1 && item === arr[index + 1]){
         // Bitwise operator to transform to number
-		total += ~~item;
-	}
+        total += ~~item;
+    }
 
-	return total;
+    return total;
 }, 0);
 
 console.log(result);
